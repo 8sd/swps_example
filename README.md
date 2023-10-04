@@ -12,12 +12,24 @@ Make sure to install the dependencies:
 yarn install
 ```
 
+or
+
+```bash
+npm install
+```
+
 ### Development Server
 
 Start the development server on `http://localhost:3000` run:
 
 ```bash
 yarn dev -o
+```
+
+or 
+
+```bash
+npm run dev
 ```
 
 ## Documentation
