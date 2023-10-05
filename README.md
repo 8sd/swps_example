@@ -2,6 +2,8 @@
 
 This is an example project that shows how Vue + Nuxt + Vuetify can be used together.
 
+You need to install [NodeJS](https://nodejs.org/en/download) first to use npm.
+
 ## How to Run the Code
 
 ### Setup
@@ -9,13 +11,13 @@ This is an example project that shows how Vue + Nuxt + Vuetify can be used toget
 Make sure to install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 or
 
 ```bash
-npm install
+yarn install
 ```
 
 ### Development Server
@@ -23,13 +25,13 @@ npm install
 Start the development server on `http://localhost:3000` run:
 
 ```bash
-yarn dev -o
+npm run dev
 ```
 
-or 
+or
 
 ```bash
-npm run dev
+yarn dev -o
 ```
 
 ## Documentation
