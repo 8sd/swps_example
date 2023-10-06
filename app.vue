@@ -1,27 +1,11 @@
 
 <template>
-    <v-app id="inspire">
-    <v-app-bar>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-app-bar-title>Customer List (show all: {{ show_all_model_text }})</v-app-bar-title>
-
-      <v-spacer></v-spacer>
-
-      <div class="switch-container">
-            <v-switch color="primary" v-model="show_all_model" density="dense" messages="show all"></v-switch>
-      </div>
-    </v-app-bar>
-
-    <v-main>
-      <Users :show_all="show_all_model"></Users>
-    </v-main>
-  </v-app>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup>
-const show_all_model = ref(false);
-const show_all_model_text = computed(() => show_all_model.value ? "yes" : "no");
 </script>
 
 <style scoped>

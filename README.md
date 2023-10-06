@@ -2,7 +2,7 @@
 
 This is an example project that shows how Vue + Nuxt + Vuetify can be used together.
 
-You need to install [NodeJS](https://nodejs.org/en/download) first to use npm.
+You need to install [NodeJS](https://nodejs.org/en/download) first to use `npm`.
 
 ## How to Run the Code
 
@@ -43,8 +43,8 @@ yarn dev -o
   1. https://www.w3schools.com/w3css/w3css_web_javascript.asp
   1. https://css-tricks.com/
 
-- Vue:
-  1. https://vuejs.org/
+- Vue (with Composition API):
+  1. https://vuejs.org/ 
   1. https://vuejs.org/guide/introduction.html
 
 - Vuetify:
