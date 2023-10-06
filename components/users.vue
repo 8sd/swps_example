@@ -6,8 +6,6 @@ const { data: users, pending, error } = await useFetch(`http://localhost:8080/v1
   method: "POST", 
   body: { query: "query { swps_Personen { Vorname Name Mail Anrede Aktiv Personen_ID PersonenExt { Latest_update PIN Personen_ID } } }" },
 })
-
-console.log(users)
 </script>
 
 <template>
