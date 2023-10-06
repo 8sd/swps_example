@@ -63,3 +63,6 @@ yarn dev -o
 - Hasura
   1. https://hasura.io/docs/latest/index/
   1. https://hasura.io/learn/graphql/vue/introduction/
+
+- To use Hasura in Nuxt you can use `Apollo` (optional)
+  1. https://apollo.nuxtjs.org/getting-started/auth-helpers
