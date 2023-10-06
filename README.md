@@ -36,7 +36,7 @@ yarn dev -o
 
 ## Documentation
 
-- Webdevelopment
+- Webdevelopment:
   1. https://developer.mozilla.org/
   1. https://www.w3schools.com/w3css/w3css_web_html.asp
   1. https://www.w3schools.com/w3css/w3css_web_css.asp
@@ -58,12 +58,21 @@ yarn dev -o
   1. https://nuxt.com/docs/getting-started/introduction
   1. https://nuxt.com/docs/examples/hello-world
 
-- Rest
+- Rest:
   1. https://de.wikipedia.org/wiki/Representational_State_Transfer
 
-- Hasura
+- Hasura:
   1. https://hasura.io/docs/latest/index/
   1. https://hasura.io/learn/graphql/vue/introduction/
 
-- To use Hasura in Nuxt you can use `Apollo` (optional)
+- To use Hasura in Nuxt you can use `Apollo` (optional):
   1. https://apollo.nuxtjs.org/getting-started/auth-helpers
+
+- Git:
+  1. https://education.github.com/git-cheat-sheet-education.pdf 
+
+- Pages that can help with general questions:
+  1. https://stackoverflow.com/
+  1. https://google.com/
+  1. https://ddg.co/
+  1. https://chat.openai.com
