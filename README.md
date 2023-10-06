@@ -46,6 +46,7 @@ yarn dev -o
 - Vue (with Composition API):
   1. https://vuejs.org/ 
   1. https://vuejs.org/guide/introduction.html
+  1. https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3/
 
 - Vuetify:
   1. https://vuetifyjs.com/en/
