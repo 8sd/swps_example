@@ -35,6 +35,10 @@ export default {
       type: String,
       required: true, // The user name is required
     },
+    userPassword: {
+      type: String,
+      required: true, // The user name is required
+    },
   },
   data() {
     return {

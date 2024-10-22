@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import { createClient } from '@supabase/supabase-js';
+
 export default {
   data() {
     return {
@@ -53,11 +55,24 @@ export default {
     };
   },
   methods: {
-    submitLogin() {
-      if (this.password !== 'eyJhbGci') {
-        this.errorMessage = 'Incorrect password. Please try again.';
-      } else {
-        this.$emit('login', { name: this.name, password: this.password }); // Emit both name and password
+    async submitLogin() {
+      const supabaseUrl = 'https://ldpsaujnvjyjtflecpgb.supabase.co';
+      const supabaseKey = this.password + 'OiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkcHNhdWpudmp5anRmbGVjcGdiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU5NTc4NDcsImV4cCI6MjA0MTUzMzg0N30.56c2P7OPQyNd1flTA4vlyZ7Hn_8sFAWG8ThW6Q341DI';
+      
+      const supabase = createClient(supabaseUrl, supabaseKey);
+
+      try {
+        // Try fetching data from Supabase to verify if the password is correct
+        const { data, error } = await supabase.from('orte').select('*').limit(1);
+        
+        if (error || !data) {
+          this.errorMessage = 'Incorrect password. Please try again.';
+        } else {
+          // If the data is fetched successfully, emit the login event
+          this.$emit('login', { name: this.name, password: this.password });
+        }
+      } catch (err) {
+        this.errorMessage = 'Error connecting to Supabase. Please try again.';
       }
     },
   },
