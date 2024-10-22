@@ -57,7 +57,6 @@ export default {
   methods: {
     async loadMarkers() {
       const supabaseUrl = 'https://ldpsaujnvjyjtflecpgb.supabase.co';
-      console.log(this.userPassword)
       const supabaseKey = this.userPassword + 'OiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkcHNhdWpudmp5anRmbGVjcGdiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU5NTc4NDcsImV4cCI6MjA0MTUzMzg0N30.56c2P7OPQyNd1flTA4vlyZ7Hn_8sFAWG8ThW6Q341DI';
       const supabase = createClient(supabaseUrl, supabaseKey);
 
